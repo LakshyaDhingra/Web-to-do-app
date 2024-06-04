@@ -3,6 +3,8 @@ import functions
 
 todos = functions.get_todos("userdatafiles/todos.txt")
 
+st.set_page_config(layout="wide")
+
 def add_todo():
     todo = st.session_state["new to-do"]
     new_todo = todo + "\n"
